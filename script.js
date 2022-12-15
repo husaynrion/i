@@ -1,13 +1,3 @@
-function myFunction() {
-  var x = document.getElementById("nav");
-  if (x.className === "nav") {
-    x.className += " responsive";
-  } else {
-    x.className = "nav";
-  }
-}
-//
-
 function gmail() {
     navigator.clipboard.writeText("husayn.buet@gmail.com");
     alert("Copied the text: " + copyText.value);
