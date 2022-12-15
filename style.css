@@ -170,29 +170,6 @@ ul a:hover {
     }
 }
 
-.anim2{
-    -webkit-animation: 700ms udvut ease-out forwards;
-    animation: 700ms udvut ease-out forwards;
-}
-
-@-webkit-keyframes udvut {
-    0%{
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes udvut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
 #about{
     -webkit-animation: tiptup 2s infinite;
     animation: tiptup 2s infinite;
