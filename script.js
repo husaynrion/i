@@ -1,6 +1,6 @@
 function gmail() {
     navigator.clipboard.writeText("husayn.buet@gmail.com");
-    alert("Copied the text: " + copyText.value);
+    alert("Copied the text: " + "husayn.buet@gmail.com");
     }
 function opacity1(){
     var k= document.getElementById("card");
