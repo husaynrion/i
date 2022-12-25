@@ -200,6 +200,31 @@ ul a:hover {
         opacity: 1;
     }
 }
+
+/* Card Disappearing Animation */
+.cardDisappear{
+    -webkit-animation: 1700ms disappear ease-out forwards;
+    animation: 1700ms disappear ease-out forwards;
+}
+
+@-webkit-keyframes disappear {
+    0%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /* About Button Blinking */
 #about{
     -webkit-animation: blink 2s infinite;
