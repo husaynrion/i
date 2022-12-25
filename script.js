@@ -1,4 +1,4 @@
-function about(){
+function home(){
     // Card Disappear
     var card = document.getElementById("card");
     card.className= "cardDisappear";
