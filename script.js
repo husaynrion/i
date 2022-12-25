@@ -1,3 +1,10 @@
+function about(){
+    // Card Disappear
+    var card = document.getElementById("card");
+    card.className= "cardDisappear";
+}
+
+
 function gmail() {
     // copying gmail address
     var text = "husayn.buet@gmail.com";
