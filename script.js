@@ -28,6 +28,7 @@ function about(){
 var missionBool = 0;
 function mission(){
     // Swapping 'MISSION' & 'U.S.A.'
+    
     if(missionBool==0){
         document.getElementById("mission").innerHTML = "U.S.A.";
         missionBool =1;
@@ -35,6 +36,7 @@ function mission(){
         document.getElementById("mission").innerHTML = "MISSION";
         missionBool =0;
     }
+    
     // Set MISSION text in the card
     aboutText = document.getElementById("aboutText");
     aboutText.style.display = "none";
