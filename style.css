@@ -33,6 +33,125 @@ body{
     }
 }
 
+
+
+#wolf{
+    height: 85vh;
+    width: 70%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    background-image: url("Wolf.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path:polygon(70% 0%,85% 60%,50% 105%,15% 60%,30% 0%);
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Mobile setting */
+@media only screen and (max-width: 600px) {
+    #wolf{
+        height: 80vh;
+        width: 80%;
+        clip-path:polygon(80% 18%,100% 57%,50% 90%,0% 57%,20% 18%);
+        background-color: rgba(255,255,255,0.1);
+    }
+}
+
+.wolfAppear{
+    -webkit-animation: 1000ms wolf-appear ease-out forwards;
+    animation: 1000ms wolf-appear ease-out forwards;
+}
+@media only screen and (max-width: 600px) {
+    .wolfAppear{
+        -webkit-animation: 1000ms m-wolf-appear ease-out forwards;
+        animation: 1000ms m-wolf-appear ease-out forwards;
+    }
+}
+@-webkit-keyframes wolf-appear {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes wolf-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@-webkit-keyframes m-wolf-appear {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes m-wolf-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+.wolfDisappear{
+    -webkit-animation: 1000ms wolf-disappear ease-out forwards;
+    animation: 1000ms wolf-disappear ease-out forwards;
+}
+@media only screen and (max-width: 600px) {
+    .wolfDisappear{
+        -webkit-animation: 1000ms m-wolf-disappear ease-out forwards;
+        animation: 1000ms m-wolf-disappear ease-out forwards;
+    }
+}
+@-webkit-keyframes wolf-disappear {
+    0%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes wolf-disappear {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes m-wolf-disappear {
+    0%{
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes m-wolf-disappear {
+    0% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /* Nav Bar */
 
 nav {
@@ -203,8 +322,8 @@ ul a:hover {
 
 /* Card Disappearing Animation */
 .cardDisappear{
-    -webkit-animation: 1700ms disappear ease-out forwards;
-    animation: 1700ms disappear ease-out forwards;
+    -webkit-animation: 700ms disappear ease-out forwards;
+    animation: 700ms disappear ease-out forwards;
 }
 
 @-webkit-keyframes disappear {
